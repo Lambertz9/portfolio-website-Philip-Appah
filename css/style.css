@@ -3,6 +3,98 @@ Colors used:
 Primary Color (White): #FAFAFA;
 Secondary Color (Green): #5A7F7D;
 */
+header {
+  background-color: #ebebeb;
+  text-align: center;
+  padding: 10px;
+  box-shadow:0px 3px 5px 0px rgba(44, 50, 50, 0.59);
+  position: relative;
+  /* Adds a 10px inner spacing to all sides */
+  margin: 10px;
+  /* Adds a 10px outer spacing to all sides */
+  border-bottom: 3px solid #aaaaaa
+}
+
+main {
+  padding-top: 133px;
+}
+
+#hero {
+  background-color: #ebebeb;
+  padding: 20px 0;
+  margin: 10px;
+
+}
+
+ 0px 0px 7px 0px rgba(44, 50, 50, 0.77);
+#hero h1 {
+  margin: 0;
+  padding: 0.67em 0;
+}
+
+
+
+.logo {
+  max-width: 250px;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #5a7f7d;
+  text-decoration: none;
+}
+
+
+nav > ul > li > a:visited {
+color: #476268;
+text-decoration: none;
+font-weight: 700;
+}
+
+
+nav > ul > li > a:hover {
+color: #4F7072;
+text-decoration: none;
+}
+
+nav > ul > li > a:active {
+color: #4EAAA4;
+text-decoration: none;
+font-weight: 700;
+}
+
+
+
+.container {
+  padding: 0 15px;
+}
+
+#projects .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #545454;
+}
+
+.row {
+  margin: 25px 0;
+  /* 25px top and bottom, 0 left and right */
+}
+
+* {
+  box-sizing: border-box;
+  /* Actual width of container changes to 100px (20px padding and 4px borders) as opposed to 124px */
+}
+
 body {
   background-color: #FAFAFA;
   font-family: 'Roboto', sans-serif;
