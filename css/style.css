@@ -21,9 +21,91 @@ main {
   padding-top: 99px;
 }
 
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+
+
 #hero {
   background-color: #ebebeb;
   text-align: center;
+  padding: 20px 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+#RenZenHeader {
+  background-color: #ebebeb;
+  text-align: left;
+  padding: 20px 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+
+#RenZentopics {
+  text-align: left;
+  padding: 20px 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+#contact-about {
+  text-align: left;
   padding: 20px 0;
   margin-left: 10px;
   margin-right: 10px;
@@ -54,7 +136,7 @@ nav>ul>li {
 
 nav>ul>li>a {
   padding: 0 5px;
-  text-transform: uppercase;
+  text-transform: Titlecase;
   font-weight: 700;
   color: #5a7f7d;
   text-decoration: none;
@@ -79,6 +161,12 @@ nav>ul>li>a:active {
 
 .container {
   padding: 0 15px;
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #projects .row {
@@ -115,18 +203,18 @@ h1, h2, h3, h4 {
 h1 {
   font-family: 'Fira Sans', sans-serif;
   font-size: 2.75em;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 h2 {
   font-family: 'Fira Sans', sans-serif;
   font-size: 2.25em;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 h3 {
   font-size: 1.75em;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 h4 {
@@ -175,6 +263,7 @@ a:focus {
   color: #ffffff;
   /* needed to override the default link color */
   font-weight: 400;
+  text-decoration: none;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #3D5653;
@@ -186,7 +275,6 @@ a:focus {
   opacity: 0.8;
   color: #ffffff;
   /* Reduces the opacity of the button to 80% */
-  text-decoration: none;
 }
 
 .button:active {
@@ -233,6 +321,14 @@ Medium devices (640px and larger)
   }
 }
 
+.col-7 {
+  width: 58.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
 [class*="col-"] {
   float: left;
   padding: 10px;
@@ -247,9 +343,17 @@ Medium devices (640px and larger)
 
 #heading H1 {
   text-align: center;
-  font-weight: 500;
-  font-size: 1.75em;
+  font-size: 2.75em;
+  font-weight: 700;
 }
+
+#intropagehead H2 {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.25em;
+  font-weight: 500;
+
+}
+
 
 #about-page h3 {
   margin-top: 0;
@@ -259,9 +363,8 @@ Medium devices (640px and larger)
   margin-top: 0;
 }
 
-contact-about {
-  padding: 10px;
-  background-color: #ebebeb;
+elementstyle {
+  clear: both;
 }
 
 /* ==============================
@@ -273,3 +376,9 @@ Large devices (1024px or larger)
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {}
+
+
+  td {
+  text-align: center;
+  vertical-align: middle;
+}
