@@ -382,3 +382,15 @@ X-large devices (1440px or larger)
   text-align: center;
   vertical-align: middle;
 }
+
+#about img {
+  width: 220px;
+}
+
+.circular-square{
+  border-radius: 50%;
+  position:relative;
+  top: 50px;
+  bottom:10px;
+  float:inherit;
+}
