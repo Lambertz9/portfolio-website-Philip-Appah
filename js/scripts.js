@@ -1,10 +1,10 @@
-console.log("Welcome to my UX profile!")
+console.log('Welcome to my UX profile!')
 
-function menuToggle() {
-  var x = document.getElementById('myNavtoggle');
+function menuToggle () {
+  var x = document.getElementById('myNavtoggle')
   if (x.className === 'navtoggle') {
-    x.className += ' responsive';
+    x.className += ' responsive'
   } else {
-    x.className = 'navtoggle';
+    x.className = 'navtoggle'
   }
 }
