@@ -5,16 +5,13 @@ Secondary Color (Green): #5A7F7D;
 */
 header {
   background-color: #ebebeb;
-
   padding: 10px 0 4px;
-  box-shadow: 0px 3px 5px 0px rgba(44, 50, 50, 0.59);
-  position: relative;
-  /* Adds a 10px inner spacing to all sides */
+  box-shadow: 0 3px 5px 0 rgba(44, 50, 50, 0.59);
+  position: relative; /* Adds a 10px inner spacing to all sides */
   margin-left: 10px;
   margin-right: 10px;
-  margin-top: 10px;
-  /* Adds a 10px outer spacing to all sides */
-  border-bottom: 3px solid #aaaaaa
+  margin-top: 10px; /* Adds a 10px outer spacing to all sides */
+  border-bottom: 3px solid #aaa;
 }
 
 main {
@@ -122,35 +119,33 @@ main {
   max-width: 150px;
 }
 
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-
-
-nav>ul>li>a {
+nav > ul > li > a {
   padding: 0 5px;
-  text-transform: Titlecase;
+  text-transform: capitalize;
   font-weight: 700;
   color: #5a7f7d;
   text-decoration: none;
 }
 
-nav>ul>li>a:visited {
+nav > ul > li > a:visited {
   color: #476268;
   text-decoration: none;
   font-weight: 700;
 }
 
-nav>ul>li>a:hover {
-  color: #4F7072;
+nav > ul > li > a:hover {
+  color: #4f7072;
   text-decoration: none;
 }
 
-nav>ul>li>a:active {
-  color: #4EAAA4;
+nav > ul > li > a:active {
+  color: #4eaaa4;
   text-decoration: none;
   font-weight: 700;
 }
@@ -159,17 +154,18 @@ nav>ul>li>a:active {
   display: none;
 }
 
-.navtoggle.responsive li  {
+.navtoggle.responsive li {
   display: block;
   padding: 10px 0;
   border-top: 1px solid rgba(90, 127, 125, 1);
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -177,15 +173,13 @@ nav>ul>li>a:active {
   padding: 24px 0 0;
 }
 
-
 .navtoggle li .icon {
   position: absolute;
   right: 0;
   top: 2px;
   font-size: 20px;
-  adding-right: 0;
+  padding-right: 0;
 }
-
 
 .container {
   padding: 0 15px;
@@ -203,28 +197,26 @@ nav>ul>li>a:active {
 }
 
 .row {
-  margin: 25px 0;
-  /* 25px top and bottom, 0 left and right */
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 
 * {
-  box-sizing: border-box;
-  /* Actual width of container changes to 100px (20px padding and 4px borders) as opposed to 124px */
+  box-sizing: border-box; /* Actual width of container changes to 100px (20px padding and 4px borders) as opposed to 124px */
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #fff;
   font-family: 'Roboto', sans-serif;
-  font-size: 17.5px;
-  /* Sets the font size to 16px */
-  font-weight: 400;
-  /* Sets the font weight to 300 */
-  line-height: 1.6;
-  /* Sets the line-height to 1.6 * the font size */
-  color: #545454
+  font-size: 17.5px;/* Sets the font size to 16px */
+  font-weight: 400;/* Sets the font weight to 300 */
+  line-height: 1.6;/* Sets the line-height to 1.6 * the font size */
+  color: #545454;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.4;
 }
 
@@ -257,8 +249,7 @@ img {
 a {
   color: #5a7f7d;
   font-weight: 400;
-  text-decoration: none;
-  /* No underlining */
+  text-decoration: none; /* No underlining */
 }
 
 a:hover {
@@ -285,24 +276,20 @@ a:focus {
 }
 
 .button {
-  display: inline-block;
-  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  display: inline-block;/* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
   background-color: #5a7f7d;
-  color: #ffffff;
-  /* needed to override the default link color */
-  font-weight: 400;
+  color: #fff;
+  font-weight: 400;/* needed to override the default link color */
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #3D5653;
-  /* width of the border, type, color */
+  border-bottom: 2px solid #3d5653;/* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
 .button:hover {
   opacity: 0.8;
-  color: #ffffff;
-  /* Reduces the opacity of the button to 80% */
+  color: #fff;/* Reduces the opacity of the button to 80% */
 }
 
 .button:active {
@@ -319,7 +306,7 @@ a:focus {
 
 .button.contact:hover {
   background-color: #5a7f7d;
-  color: #ffffff;
+  color: #fff;
 }
 
 /* ==============================
@@ -335,32 +322,33 @@ Medium devices (640px and larger)
   .logo {
     max-width: 250px;
   }
+
   nav {
     width: auto;
     margin: 20px;
-    float: right
+    float: right;
   }
 
   nav > ul {
     margin: 1em 0;
   }
 
-  nav>ul>li {
+  nav > ul > li {
     display: inline-block;
   }
 
-  .navtoggle li:not(:last-child) {
-  display: inline-block;
-}
+  .navtoggle li:last-child {
+    display: none;
+  }
 
-.navtoggle li:last-child {
-  display: none;
-}
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
 
   .aboutnav {
     width: auto;
     margin: 5px;
-    float: right
+    float: right;
   }
 
   .col-md-6 {
@@ -388,13 +376,61 @@ Medium devices (640px and larger)
   display: table;
 }
 
-#heading H1 {
+#heading h1 {
   text-align: center;
   font-size: 2.75em;
   font-weight: 700;
 }
 
-#intropagehead H2 {
+#intropagehead h2 {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.25em;
+  font-weight: 500;
+}
+
+#intropagehead1 h2 {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.25em;
+  font-weight: 500;
+}
+
+#intropagehead2 h2 {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.25em;
+  font-weight: 500;
+}
+
+#intropagehead3 h2 {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.25em;
+  font-weight: 500;
+}
+
+#intropagehead4 h2 {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.25em;
+  font-weight: 500;
+}
+
+#intropagehead5 h2 {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.25em;
+  font-weight: 500;
+}
+
+#intropagehead6 h2 {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.25em;
+  font-weight: 500;
+}
+
+#intropagehead7 h2 {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 1.25em;
+  font-weight: 500;
+}
+
+#intropagehead8 h2 {
   font-family: 'Fira Sans', sans-serif;
   font-size: 1.25em;
   font-weight: 500;
@@ -408,19 +444,9 @@ Medium devices (640px and larger)
   margin-top: 0;
 }
 
-elementstyle {
+#contact {
   clear: both;
 }
-
-/* ==============================
-Large devices (1024px or larger)
-================================= */
-@media only screen and (min-width: 1024px) {}
-
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {}
 
 td {
   text-align: center;
