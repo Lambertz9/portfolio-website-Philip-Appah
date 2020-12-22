@@ -1,3 +1,4 @@
+
 /*
 Colors used:
 Primary Color (White): #FAFAFA;
@@ -154,23 +155,9 @@ nav > ul > li > a:active {
   display: none;
 }
 
-.navtoggle.responsive li {
-  display: block;
-  padding: 10px 0;
-  border-top: 1px solid rgba(90, 127, 125, 1);
-}
-
-.navtoggle.responsive li:last-child {
-  padding: 0 0 10px;
-}
-
 .navtoggle,
 .navtoggle.responsive {
   position: relative;
-}
-
-.navtoggle.responsive nav {
-  padding: 24px 0 0;
 }
 
 .navtoggle li .icon {
@@ -353,6 +340,22 @@ Medium devices (640px and larger)
 
   .col-md-6 {
     width: 50%;
+  }
+}
+
+@media only screen and (max-width: 639px) {
+  .navtoggle.responsive li {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid rgba(90, 127, 125, 1);
+  }
+
+  .navtoggle.responsive nav {
+    padding: 24px 0 0;
+  }
+
+  .navtoggle.responsive li:last-child {
+    padding: 0 0 10px;
   }
 }
 
